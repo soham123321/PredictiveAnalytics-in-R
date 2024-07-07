@@ -1,7 +1,18 @@
-# PredictiveAnalytics-in-R
-Summary - Analytical project for understanding trends in hotel booking cancellations. Encompasses Supervised & Unsupervised Machine Learning model to perform predictive analytics for the cancellations
-The data set is made of 19 attributes and 700000 observations. Each observation is a hotel booking and gives insight into different attributes for that booking.
-Initially various visualizations were created to find patterns in the dataset for different attributes. Some of the visualizations were box plots, bar graphs & maps.
-Post this stage unsupervised machine learning was perfromed using apropri & arules libraries to determine the statistically significant attributes from the dataset.
-The dataset was divided into training and test data to reduce overfitting
-A support vector machine was created using the training data. The predictive model was tested with different values of C and cross for the SVM and the model with the best accuracy was selected. Confusion matrix was created to test the accuracay of the data. Final model with 80% prediction accuracy was achieved to predict whether a hotel booking will result in a cancellation.
+# PredictiveAnalytics for Hotel Booking Cancellations
+Programming language: R
+Objective: Predict whether a hotel booking will be cancelled
+Data set details: 19 Features, 700000 Observations
+
+Highlights: Feature Engineering, Unsupervised Machine Learning, Supervised Machine Learning, Visual Analytics, Predictive Analytics
+ML Model: Support Vector Machine
+
+Summary
+Proposed solution was to perform unsupervised ML on the dataset for feature selection and supervised machine learning was used to perform predictions.
+
+Steps:
+Explatory Data analytics - Visualizations(Box plots, histograms & maps) using ggplot for understanding the skewness of the data
+Unsupervised Machine Learning - Feature selection using apropri & arules libraries. Features were determined by looking at their p-value to determine stastical signifance.
+Data Split - The data set was randomly divided into training and test to avoid overfitting.
+Supervised Machine Learning - Support vector machine was used to perform predictions. Performed grid search for multiple values of C and cross for model tuning.
+Accuracy Testing - Confusion matrix was created to assess the accuracy of the model
+
